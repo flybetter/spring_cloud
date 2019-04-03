@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: hello-service # 指定注册到Eureka Server上的应用名称
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: false # 将自己的IP注册到Eureka Server。若不配置或设置为false，表示注册微服务所在操作系统的hostname到Eureka Server
